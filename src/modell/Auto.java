@@ -10,10 +10,10 @@ public class Auto extends Jarmu{
     }
     
     public void kereketCserel(){
-
+        
     }
     
-    @Override
+    
     public boolean halad(){
         return false;
     }
