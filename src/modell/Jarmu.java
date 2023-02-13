@@ -8,37 +8,27 @@ public abstract class Jarmu {
     }
 
     public Jarmu(boolean beinditva, boolean uzemanyag, boolean megerkezett) {
-        this.beinditva = beinditva;
-        this.uzemanyag = uzemanyag;
-        this.megerkezett = megerkezett;
+        this.beinditva = false;
+        this.uzemanyag = true;
+        this.megerkezett = false;
     }
     
     
-    public void beindit(boolean beinditva){
-        beinditva = false;
-        if(beinditva == true){
-           
-        }
+    public void beindit(){
+        boolean siker = true;
     }
     
     public void leallit(){
-        
+        boolean siker = false;
     }
     
-    public boolean tankol(boolean uzemanyag, boolean beinditva){
-        uzemanyag = true;
-        beinditva = true;
-        if(uzemanyag == false && beinditva == true) {
-            return false; 
-        }
-        return true;
+    public boolean tankol(){
+        boolean siker = false;
+        return siker;
     }
     
-    public boolean halad(boolean beinditva){
-        beinditva = false; 
-        if(beinditva == true){
-            return true;
-        }
-        return false;
+    public boolean halad(){
+        boolean siker = false;
+        return siker;
     }
 }
